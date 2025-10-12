@@ -8,11 +8,17 @@
   <!-- Tailwind CSS (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Smooth scroll for anchor links */
     html { scroll-behavior: smooth; }
+    .hero-bg {
+      background-image: url('images (1).jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   </style>
 </head>
 <body class="min-h-screen bg-white text-gray-900">
+
   <!-- NAV -->
   <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
@@ -26,28 +32,32 @@
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-    <div class="mx-auto max-w-7xl px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-      <div>
-        <p class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm">🌐 International Workshop</p>
-        <h1 class="mt-5 text-4xl md:text-6xl font-extrabold leading-tight">Quantum Simulation & Computational Materials Design</h1>
-        <p class="mt-5 max-w-2xl text-lg text-gray-700">
-          VTICD 2025 brings together researchers, students, and professionals to advance quantum simulation methods
-          and computational materials design. Jointly organized by National Yang Ming Chiao Tung University (Taiwan, R.O.C.)
-          and Hanoi National University of Education (Viet Nam), the workshop features expert‑guided lectures, hands‑on tutorials,
-          and collaborative discussions.
-        </p>
-        <div class="mt-6 flex flex-wrap items-center gap-3 text-gray-700">
-          <span class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm">📅 October 30 – November 1, 2025</span>
-          <span class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm">📍 Hanoi, Viet Nam</span>
-        </div>
-        <div class="mt-8">
-          <a href="#schedule" class="rounded-full bg-black px-5 py-3 text-white hover:bg-gray-800">View Program →</a>
-        </div>
+  <!-- HERO with background -->
+  <section class="relative hero-bg">
+    <!-- overlay for readability -->
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-white/90"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 py-32 text-center text-white">
+      <p class="inline-flex items-center gap-2 rounded-full border border-white/70 px-3 py-1 text-sm bg-white/10 backdrop-blur-sm">
+        ?? International Workshop
+      </p>
+      <h1 class="mt-5 text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
+        Quantum Simulation & Computational Materials Design
+      </h1>
+      <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-100 drop-shadow">
+        VTICD 2025 brings together researchers, students, and professionals to advance quantum simulation methods
+        and computational materials design. Jointly organized by National Yang Ming Chiao Tung University (Taiwan, R.O.C.)
+        and Hanoi National University of Education (Viet Nam).
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center items-center gap-3 text-gray-100">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/50 px-3 py-1 text-sm bg-white/10">?? October 30 – November 1, 2025</span>
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/50 px-3 py-1 text-sm bg-white/10">?? Hanoi, Viet Nam</span>
       </div>
-      <div class="rounded-2xl border bg-white shadow-sm p-6 text-sm text-gray-500">
-        Placeholder for hero image / collage (replace with photos)
+      <div class="mt-10">
+        <a href="#schedule" class="rounded-full bg-white text-black font-semibold px-6 py-3 hover:bg-gray-100 transition">
+          View Program ?
+        </a>
       </div>
     </div>
   </section>
@@ -60,7 +70,7 @@
       <p class="text-gray-700">
         VTICD 2025 brings together researchers, students, and professionals to advance quantum simulation methods and computational materials design.
         Jointly organized by National Yang Ming Chiao Tung University (Taiwan, R.O.C.) and Hanoi National University of Education (Viet Nam),
-        the workshop features expert‑guided lectures, hands‑on tutorials, and collaborative discussions.
+        the workshop features expert-guided lectures, hands-on tutorials, and collaborative discussions.
       </p>
     </div>
   </section>
@@ -73,23 +83,18 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10">
       <!-- Day 0 -->
       <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <div class="mb-4 flex items-center justify-between">
-          <div>
-            <h3 class="font-semibold">Day 0</h3>
-            <p class="text-sm text-gray-600">Thu, 30 Oct 2025</p>
-          </div>
-          <span class="text-gray-500">🕒</span>
-        </div>
+        <h3 class="font-semibold mb-1">Day 0</h3>
+        <p class="text-sm text-gray-600 mb-3">Thu, 30 Oct 2025</p>
         <ul class="space-y-3">
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">17:00 – 18:15</div>
+            <div class="w-28 text-sm font-medium text-gray-700">17:00 – 18:15</div>
             <div>
               <p class="font-medium">Reception</p>
-              <p class="text-sm text-gray-600">Host: Prof. Do Danh Bich | Chairs: Prof. Luc Huy Hoang, Prof. Wu‑Ching Chou</p>
+              <p class="text-sm text-gray-600">Host: Prof. Do Danh Bich | Chairs: Prof. Luc Huy Hoang, Prof. Wu-Ching Chou</p>
             </div>
           </li>
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">—</div>
+            <div class="w-28 text-sm font-medium text-gray-700">—</div>
             <div>
               <p class="font-medium">Venue: Aurora Premium – A Lifestyle Hotel, Hanoi</p>
               <p class="text-sm text-gray-600">Venue</p>
@@ -100,131 +105,42 @@
 
       <!-- Day 1 -->
       <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <div class="mb-4 flex items-center justify-between">
-          <div>
-            <h3 class="font-semibold">Day 1</h3>
-            <p class="text-sm text-gray-600">Fri, 31 Oct 2025</p>
-          </div>
-          <span class="text-gray-500">🕒</span>
-        </div>
+        <h3 class="font-semibold mb-1">Day 1</h3>
+        <p class="text-sm text-gray-600 mb-3">Fri, 31 Oct 2025</p>
         <ul class="space-y-3">
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">09:10 – 09:30</div>
+            <div class="w-28 text-sm font-medium text-gray-700">09:10 – 09:30</div>
             <div>
-              <p class="font-medium">Lecture 1: Fundamentals of Solid‑State Theory</p>
-              <p class="text-sm text-gray-600">Prof. Shung‑Jen Cheng</p>
+              <p class="font-medium">Lecture 1: Fundamentals of Solid-State Theory</p>
+              <p class="text-sm text-gray-600">Prof. Shung-Jen Cheng</p>
             </div>
           </li>
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">09:30 – 10:00</div>
+            <div class="w-28 text-sm font-medium text-gray-700">09:30 – 10:00</div>
             <div>
               <p class="font-medium">Lecture 2: Dielectric Screening in 2D Materials</p>
               <p class="text-sm text-gray-600">Dr. Jheng Dong Lin</p>
             </div>
           </li>
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">10:00 – 10:30</div>
+            <div class="w-28 text-sm font-medium text-gray-700">10:00 – 10:30</div>
             <div>
               <p class="font-medium">Lecture 3: Wannierization for 2D Materials</p>
               <p class="text-sm text-gray-600">Mr. Chin Hung Shih</p>
             </div>
           </li>
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">10:30 – 10:50</div>
+            <div class="w-28 text-sm font-medium text-gray-700">10:30 – 10:50</div>
             <div>
               <p class="font-medium">Coffee Break</p>
               <p class="text-sm text-gray-600">Chairs: Prof. Ngo Ngoc Hoa, Prof. Tran Manh Cuong</p>
             </div>
           </li>
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">11:00 – 11:50</div>
+            <div class="w-28 text-sm font-medium text-gray-700">11:00 – 11:50</div>
             <div>
               <p class="font-medium">Lecture 4: Excitons in 2D Materials — WannierBSE Tutorial</p>
               <p class="text-sm text-gray-600">Dr. Vo Khuong Dien; Chin Hung Shih; Jheng Dong Lin</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">11:50 – 13:00</div>
-            <div>
-              <p class="font-medium">Lunch Break</p>
-              <p class="text-sm text-gray-600">Chairs: Prof. Hung‑Chung Hsueh, Prof. Pham Van Hai</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">13:00 – 13:20</div>
-            <div>
-              <p class="font-medium">Growth Dynamics and Physical Properties of III–VI 2D Semiconductors (MBE)</p>
-              <p class="text-sm text-gray-600">Prof. Wu‑Ching Chou</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">13:20 – 13:40</div>
-            <div>
-              <p class="font-medium">Ultrafast Dynamics in Strongly Correlated Quantum Matter: THz Spectroscopy and Applications</p>
-              <p class="text-sm text-gray-600">Prof. Chih‑Wei Luo</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">13:40 – 14:00</div>
-            <div>
-              <p class="font-medium">Distinct Kondo Screening in Heavy‑Fermion Filled Skutterudites (4f¹/4f²)</p>
-              <p class="text-sm text-gray-600">Prof. Stefan Kirchner</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">14:00 – 14:20</div>
-            <div>
-              <p class="font-medium">Effect of Oxygen Vacancy on Photocatalytic Performance of Bi‑based Semiconductors</p>
-              <p class="text-sm text-gray-600">Prof. Pham Van Hai</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">14:20 – 14:40</div>
-            <div>
-              <p class="font-medium">Coffee Break</p>
-              <p class="text-sm text-gray-600">Chairs: Prof. Chih‑Wei Luo, Prof. Nguyen Thi Thao</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">14:40 – 15:00</div>
-            <div>
-              <p class="font-medium">High‑Throughput GW Calculations via Machine Learning</p>
-              <p class="text-sm text-gray-600">Prof. Hung‑Chung Hsueh</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">15:00 – 15:20</div>
-            <div>
-              <p class="font-medium">Computational Limits of Low‑Rank Adaptation (LoRA) for Transformer‑Based Models</p>
-              <p class="text-sm text-gray-600">Prof. En‑Jui Kuo</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">15:20 – 15:40</div>
-            <div>
-              <p class="font-medium">Broadband Microwave Coding Absorber Using Genetic Algorithm</p>
-              <p class="text-sm text-gray-600">Prof. Tran Manh Cuong</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">15:40 – 16:00</div>
-            <div>
-              <p class="font-medium">TBA</p>
-              <p class="text-sm text-gray-600">Prof. Chia Ming Chung</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">16:00 – 17:30</div>
-            <div>
-              <p class="font-medium">Discussion</p>
-              <p class="text-sm text-gray-600">Panel</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">—</div>
-            <div>
-              <p class="font-medium">Afternoon Venue: Faculty of Physics, HNUE — Building K</p>
-              <p class="text-sm text-gray-600">Venue</p>
             </div>
           </li>
         </ul>
@@ -232,23 +148,18 @@
 
       <!-- Day 2 -->
       <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <div class="mb-4 flex items-center justify-between">
-          <div>
-            <h3 class="font-semibold">Day 2</h3>
-            <p class="text-sm text-gray-600">Sat, 01 Nov 2025</p>
-          </div>
-          <span class="text-gray-500">🕒</span>
-        </div>
+        <h3 class="font-semibold mb-1">Day 2</h3>
+        <p class="text-sm text-gray-600 mb-3">Sat, 01 Nov 2025</p>
         <ul class="space-y-3">
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">09:00 —</div>
+            <div class="w-28 text-sm font-medium text-gray-700">09:00 —</div>
             <div>
               <p class="font-medium">Closing Remark</p>
               <p class="text-sm text-gray-600">Prof. Do Danh Bich</p>
             </div>
           </li>
           <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 shrink-0 text-sm font-medium text-gray-700">—</div>
+            <div class="w-28 text-sm font-medium text-gray-700">—</div>
             <div>
               <p class="font-medium">Venue: Aurora Premium – A Lifestyle Hotel, Hanoi</p>
               <p class="text-sm text-gray-600">Venue</p>
@@ -282,5 +193,6 @@
       <div class="text-sm text-gray-600">Contact: vticd@placeholder.org</div>
     </div>
   </footer>
+
 </body>
 </html>
