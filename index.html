@@ -1,198 +1,236 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VTICD 2025 � 1st Vietnam�Taiwan International Workshop on Computation and Design</title>
-  <meta name="description" content="Quantum Simulation & Computational Materials Design. October 30 � November 1, 2025 � Hanoi, Viet Nam" />
-  <!-- Tailwind CSS (CDN) -->
+  <title>Quantum Simulation & Computational Materials Design 2026</title>
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fallback font stack -->
   <style>
-    html { scroll-behavior: smooth; }
-    .hero-bg {
-      background-image: url('images (1).jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    :root { color-scheme: light; }
+    html, body {
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                   Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+                   "Segoe UI Emoji", "Noto Color Emoji";
     }
   </style>
 </head>
 <body class="min-h-screen bg-white text-gray-900">
-
-  <!-- NAV -->
+  <!-- Header / Nav -->
   <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-      <a href="#" class="font-semibold">VTICD 2025</a>
+      <a href="#" class="font-semibold">Quantum Simulation & Computational Materials Design 2026</a>
       <div class="hidden items-center gap-6 md:flex">
-        <a href="#about" class="hover:underline">About</a>
+        <a href="#about" class="hover:underline">Introduction</a>
+        <a href="#speakers" class="hover:underline">WannierBSE</a>
         <a href="#schedule" class="hover:underline">Schedule</a>
         <a href="#venue" class="hover:underline">Venue</a>
+        <a href="#register" class="hover:underline">Register</a>
       </div>
-      <a href="#schedule" class="rounded-full bg-black px-4 py-2 text-white hover:bg-gray-800">Program</a>
+      <button class="md:hidden inline-flex items-center rounded-md border px-3 py-1.5"
+              aria-label="Menu" onclick="document.getElementById('mnav').classList.toggle('hidden')">
+       
+      </button>
     </nav>
+    <!-- Mobile nav -->
+    <div id="mnav" class="md:hidden hidden border-t">
+      <div class="mx-auto max-w-7xl px-4 py-2 flex flex-col gap-2">
+        <a href="#about" class="py-1">about</a>
+        <a href="#speakers" class="py-1">speakers</a>
+        <a href="#schedule" class="py-1">schedule</a>
+        <a href="#venue" class="py-1">venue</a>
+        <a href="#register" class="py-1">register</a>
+      </div>
+    </div>
   </header>
 
-  <!-- HERO with background -->
-  <section class="relative hero-bg">
-    <!-- overlay for readability -->
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-white/90"></div>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <div class="mx-auto max-w-7xl px-4 py-20 text-center">
 
-    <div class="relative mx-auto max-w-7xl px-4 py-32 text-center text-white">
-      <p class="inline-flex items-center gap-2 rounded-full border border-white/70 px-3 py-1 text-sm bg-white/10 backdrop-blur-sm">
-        ?? International Workshop
-      </p>
-      <h1 class="mt-5 text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
-        Quantum Simulation & Computational Materials Design
+      <h1 class="mt-5 text-3xl md:text-5xl font-extrabold tracking-tight">
+        Quantum Simulation & Computational Materials Design 2026
       </h1>
-      <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-100 drop-shadow">
-        VTICD 2025 brings together researchers, students, and professionals to advance quantum simulation methods
-        and computational materials design. Jointly organized by National Yang Ming Chiao Tung University (Taiwan, R.O.C.)
-        and Hanoi National University of Education (Viet Nam).
-      </p>
-      <div class="mt-8 flex flex-wrap justify-center items-center gap-3 text-gray-100">
-        <span class="inline-flex items-center gap-2 rounded-full border border-white/50 px-3 py-1 text-sm bg-white/10">?? October 30 � November 1, 2025</span>
-        <span class="inline-flex items-center gap-2 rounded-full border border-white/50 px-3 py-1 text-sm bg-white/10">?? Hanoi, Viet Nam</span>
+
+      <div class="mt-6 flex flex-wrap justify-center items-center gap-3 text-gray-100">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/50 px-3 py-1 text-sm bg-white/10">
+          October 30 &ndash; November 1, 2026
+        </span>
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/50 px-3 py-1 text-sm bg-white/10">
+          Hanoi, Viet Nam
+        </span>
       </div>
-      <div class="mt-10">
-        <a href="#schedule" class="rounded-full bg-white text-black font-semibold px-6 py-3 hover:bg-gray-100 transition">
-          View Program ?
+
+      <div class="mt-10 flex justify-center gap-4">
+        <a href="#register"
+           class="rounded-full bg-white text-black font-semibold px-6 py-3 hover:bg-gray-100 transition inline-flex items-center gap-2">
+          <span>Register now</span>
+          <!-- See the program -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+
+        <a href="#schedule"
+           class="rounded-full border border-white/70 text-white font-semibold px-6 py-3 hover:bg-white/10 transition inline-flex items-center gap-2">
+          <span>See the program</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- About -->
   <section id="about" class="mx-auto max-w-7xl px-4 py-16">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">About VTICD 2025</h2>
-    <p class="mt-3 text-center text-gray-600">Program language: English.</p>
-    <div class="rounded-2xl border bg-white p-6 shadow-sm mt-8">
-      <p class="text-gray-700">
-        VTICD 2025 brings together researchers, students, and professionals to advance quantum simulation methods and computational materials design.
-        Jointly organized by National Yang Ming Chiao Tung University (Taiwan, R.O.C.) and Hanoi National University of Education (Viet Nam),
-        the workshop features expert-guided lectures, hands-on tutorials, and collaborative discussions.
-      </p>
-    </div>
-  </section>
-
-  <!-- SCHEDULE -->
-  <section id="schedule" class="mx-auto max-w-7xl px-4 py-16">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">Program at a glance</h2>
-    <p class="mt-3 text-center text-gray-600">Detailed timetable in circular.</p>
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10">
-      <!-- Day 0 -->
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <h3 class="font-semibold mb-1">Day 0</h3>
-        <p class="text-sm text-gray-600 mb-3">Thu, 30 Oct 2025</p>
-        <ul class="space-y-3">
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">17:00 � 18:15</div>
-            <div>
-              <p class="font-medium">Reception</p>
-              <p class="text-sm text-gray-600">Host: Prof. Do Danh Bich | Chairs: Prof. Luc Huy Hoang, Prof. Wu-Ching Chou</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">�</div>
-            <div>
-              <p class="font-medium">Venue: Aurora Premium � A Lifestyle Hotel, Hanoi</p>
-              <p class="text-sm text-gray-600">Venue</p>
-            </div>
-          </li>
-        </ul>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl font-bold">Introduction</h2>
+        <p class="mt-4 leading-7 text-gray-700">
+          VTICD 2025 brings together researchers, students, and professionals to
+          advance quantum simulation methods and computational materials design. 
+          Jointly organized by National Yang Ming Chiao Tung University (Taiwan, R.O.C.)
+          and Hanoi National University of Education (Viet Nam), the workshop features 
+          expert-guided lectures, hands-on tutorials, and collaborative discussions. 
+          This edition also highlights WannierBSE, a practical workflow for excitonic 
+          and optical-spectrum calculations based on Wannier-function interpolation and the Bethe-Salpeter Equation, with a live demonstration and Q&A.</p>
       </div>
-
-      <!-- Day 1 -->
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <h3 class="font-semibold mb-1">Day 1</h3>
-        <p class="text-sm text-gray-600 mb-3">Fri, 31 Oct 2025</p>
-        <ul class="space-y-3">
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">09:10 � 09:30</div>
-            <div>
-              <p class="font-medium">Lecture 1: Fundamentals of Solid-State Theory</p>
-              <p class="text-sm text-gray-600">Prof. Shung-Jen Cheng</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">09:30 � 10:00</div>
-            <div>
-              <p class="font-medium">Lecture 2: Dielectric Screening in 2D Materials</p>
-              <p class="text-sm text-gray-600">Dr. Jheng Dong Lin</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">10:00 � 10:30</div>
-            <div>
-              <p class="font-medium">Lecture 3: Wannierization for 2D Materials</p>
-              <p class="text-sm text-gray-600">Mr. Chin Hung Shih</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">10:30 � 10:50</div>
-            <div>
-              <p class="font-medium">Coffee Break</p>
-              <p class="text-sm text-gray-600">Chairs: Prof. Ngo Ngoc Hoa, Prof. Tran Manh Cuong</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">11:00 � 11:50</div>
-            <div>
-              <p class="font-medium">Lecture 4: Excitons in 2D Materials � WannierBSE Tutorial</p>
-              <p class="text-sm text-gray-600">Dr. Vo Khuong Dien; Chin Hung Shih; Jheng Dong Lin</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Day 2 -->
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <h3 class="font-semibold mb-1">Day 2</h3>
-        <p class="text-sm text-gray-600 mb-3">Sat, 01 Nov 2025</p>
-        <ul class="space-y-3">
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">09:00 �</div>
-            <div>
-              <p class="font-medium">Closing Remark</p>
-              <p class="text-sm text-gray-600">Prof. Do Danh Bich</p>
-            </div>
-          </li>
-          <li class="flex gap-3 rounded-xl border p-3">
-            <div class="w-28 text-sm font-medium text-gray-700">�</div>
-            <div>
-              <p class="font-medium">Venue: Aurora Premium � A Lifestyle Hotel, Hanoi</p>
-              <p class="text-sm text-gray-600">Venue</p>
-            </div>
-          </li>
-        </ul>
+      <div class="rounded-xl border bg-gray-50 p-4">
+        <!-- Fig -->
+        <img src="images (1).jpg"
+             alt="Materials Science" class="w-full h-64 object-cover rounded-lg" />
+        <p class="text-sm text-gray-600 mt-3">
+          Hanoi National University of Education
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- VENUE -->
-  <section id="venue" class="mx-auto max-w-7xl px-4 py-16">
-    <h2 class="text-3xl md:text-4xl font-bold text-center">Venues & Travel</h2>
-    <p class="mt-3 text-center text-gray-600">Reception & Closing at Aurora Premium Hotel (Hanoi). Main sessions at Faculty of Physics, HNUE � Building K.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <h3 class="font-semibold">Aurora Premium � A Lifestyle Hotel, Hanoi</h3>
-        <p class="mt-2 text-gray-700">Reception (Oct 30) and Closing (Nov 1).</p>
+  <!-- WannierBSE code -->
+  <section id="WannierBSE" class="mx-auto max-w-7xl px-4 py-16 border-t">
+    <h2 class="text-2xl font-bold">WannierBSE code</h2>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Link of the code -->
+      <article class="rounded-xl border p-6">
+        <div class="h-36 bg-gray-100 rounded-lg flex items-center justify-center">WannierBSE</div>
+        <a href="https://quantum.web.nycu.edu.tw/wannierbse/" target="_blank"
+        <h3 class="mt-4 font-semibold">SJCheng group@NYCU</h3>
+        <p class="text-gray-600 text-sm">Department of Electrophysics, National Yang Ming Chiao Tung University</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="mx-auto max-w-7xl px-4 py-16 border-t">
+  <h2 class="text-2xl font-bold">Program (English)</h2>
+  <p class="mt-2 text-gray-600">Vietnam–Taiwan International Workshop on Computation and Design · October 30 – November 1, 2025 · Hanoi, Vietnam</p>
+
+  <div class="mt-6 grid md:grid-cols-3 gap-6">
+    <!-- Day 0 -->
+    <div class="rounded-xl border p-5 bg-white">
+      <h3 class="font-semibold">Day 0 (Thu) · October 30, 2025</h3>
+      <ul class="mt-3 text-gray-700 space-y-1">
+        <li>17:00 – 18:15 · Reception — <em>Aurora Premium – A Lifestyle Hotel, Hanoi</em></li>
+        <li class="text-sm text-gray-600">Session Chairs: Prof. Luc Huy Hoang, Prof. Wu-Ching Chou</li>
+      </ul>
+    </div>
+
+    <!-- Day 1 -->
+    <div class="rounded-xl border p-5 bg-white">
+      <h3 class="font-semibold">Day 1 (Fri) · October 31, 2025</h3>
+      <ul class="mt-3 text-gray-700 space-y-1">
+        <li>09:10 – 09:30 · Lecture 1 — <strong>Fundamentals of Solid-State Theory</strong>, Prof. Shung‑Jen Cheng (NYCU)</li>
+        <li>09:30 – 10:00 · Lecture 2 — <strong>Dielectric Screening in 2D Materials</strong>, Dr. Jheng‑Dong Lin (NYCU)</li>
+        <li>10:00 – 10:30 · Lecture 3 — <strong>Wannierization for 2D Materials</strong>, Mr. Chin‑Hung Shih (NYCU)</li>
+        <li>10:30 – 10:50 · Coffee Break — Session Chairs: Prof. Ngo Ngoc Hoa, Prof. Tran Manh Cuong</li>
+        <li>11:00 – 11:50 · Lecture 4 — <strong>Excitons in 2D Materials: WannierBSE Tutorial</strong>, Dr. Vo Khuong Dien, Chin‑Hung Shih, Jheng‑Dong Lin (NYCU)</li>
+        <li>11:50 – 13:00 · Lunch Break — Session Chairs: Prof. Hung‑Chung Hsueh, Prof. Pham Van Hai</li>
+        <li>13:00 – 13:20 · <strong>Growth Dynamics and Physical Properties of III–VI 2D Semiconductors Grown by MBE</strong>, Prof. Wu‑Ching Chou (NYCU)</li>
+        <li>13:20 – 13:40 · <strong>Ultrafast Dynamics in Strongly Correlated Quantum Matter: THz Spectroscopy and Applications</strong>, Prof. Chih‑Wei Luo</li>
+        <li>13:40 – 14:00 · <strong>Distinct Kondo Screening in Heavy‑Fermion Filled Skutterudites (4f¹ &amp; 4f²)</strong>, Prof. Stefan Kirchner</li>
+        <li>14:00 – 14:20 · <strong>Effect of Oxygen Vacancy on Photocatalytic Performance of Bi‑Based Semiconductors</strong>, Prof. Pham Van Hai (HNUE)</li>
+        <li>14:20 – 14:40 · Coffee Break — Session Chairs: Prof. Chih‑Wei Luo, Prof. Nguyen Thi Thao</li>
+        <li>14:40 – 15:00 · <strong>High‑Throughput GW Calculations via Machine Learning</strong>, Prof. Hung‑Chung Hsueh (Tamkang University)</li>
+        <li>15:00 – 15:20 · <strong>Computational Limits of LoRA for Transformer‑Based Models</strong>, Prof. En‑Jui Kuo</li>
+        <li>15:20 – 15:40 · <strong>Broadband Microwave Coding Absorber Using Genetic Algorithm</strong>, Prof. Tran Manh Cuong (HNUE)</li>
+        <li>15:40 – 16:00 · <strong>TBA</strong> — Prof. Chia‑Ming Chung</li>
+        <li>16:00 – 17:30 · Open Discussion</li>
+        <!-- Optional evening program; uncomment if confirmed
+        <li>18:00 – 20:00 · Dinner / Networking (TBA)</li>
+        -->
+      </ul>
+      <p class="mt-2 text-sm text-gray-600">Venue: Faculty of Physics, Hanoi National University of Education (HNUE)</p>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="rounded-xl border p-5 bg-white">
+      <h3 class="font-semibold">Day 2 (Sat) · November 1, 2025</h3>
+      <ul class="mt-3 text-gray-700 space-y-1">
+        <li>09:00 – Closing Remarks — Prof. Do Danh Bich (HNUE)</li>
+      </ul>
+      <p class="mt-2 text-sm text-gray-600">Venue: Faculty of Physics, HNUE</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Venue -->
+  <section id="venue" class="mx-auto max-w-7xl px-4 py-16 border-t">
+    <h2 class="text-2xl font-bold">Venue</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="rounded-xl border p-5">
+        <p class="text-gray-700">
+          Building K, Hanoi National University of Education
+	  136 Xuan Thuy Rd, Cau Giay dist, Hanoi 10000, Vietnam
+        </p>
+        <a href="https://maps.app.goo.gl/dcc4fQP5MZ6pbcvC9" target="_blank"
+           class="mt-4 inline-flex items-center gap-2 rounded-md border px-4 py-2 hover:bg-gray-50">
+           Google Maps
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <h3 class="font-semibold">Faculty of Physics, Hanoi National University of Education (HNUE) � Building K</h3>
-        <p class="mt-2 text-gray-700">Lectures and talks on Oct 31.</p>
+      <div class="rounded-xl border overflow-hidden">
+        <!-- Figure -->
+        <img src="images (1).jpg"
+             alt="Hanoi city" class="w-full h-64 object-cover">
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="border-t bg-white">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-8 md:flex-row">
-      <p class="text-sm text-gray-600">� 2025 VTICD 2025. All rights reserved.</p>
-      <div class="text-sm text-gray-600">Contact: vticd@placeholder.org</div>
+  <!-- Register -->
+  <section id="register" class="mx-auto max-w-7xl px-4 py-16 border-t">
+    <h2 class="text-2xl font-bold">Register</h2>
+    <p class="mt-4 text-gray-700">
+      Please enter your full name and confirmation email address (Vui lòng điền họ và tên và email xác nhận).
+    </p>
+    <form class="mt-6 grid md:grid-cols-2 gap-4" onsubmit="event.preventDefault(); alert('Họ và Tên');">
+      <input required class="rounded-md border px-4 py-2" placeholder="Full name (Họ và tên)" />
+      <input required type="email" class="rounded-md border px-4 py-2" placeholder="Email" />
+      <input class="rounded-md border px-4 py-2 md:col-span-2" placeholder="Please state your institutional affiliation." />
+      <textarea class="rounded-md border px-4 py-2 md:col-span-2" rows="4" placeholder="Would you like to participate in the WannierBSE training and hands-on session?"></textarea>
+      <button class="rounded-md bg-gray-900 text-white px-5 py-2 font-semibold hover:bg-gray-800 md:col-span-2">
+        Submit Registration
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="mx-auto max-w-7xl px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-2">
+      <p>&copy; 2026 VMSC. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:underline">Ch nh s ch</a>
+        <a href="#" class="hover:underline">Li n h?</a>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>
